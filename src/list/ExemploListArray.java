@@ -57,15 +57,15 @@ public class ExemploListArray {
     notas.remove(0);
     System.out.println(notas);
 
-    System.out.println("remova as notas menores que 7: ");
-    Iterator<Double> iterator1 = notas.iterator();
-    while (iterator1.hasNext()) {
-      double next = iterator.next();
-      if (next < 7) {
-        iterator1.remove();
-      }
-    }
-    System.out.println(notas);
+    // System.out.println("remova as notas menores que 7: ");
+    // Iterator<Double> iterator1 = notas.iterator();
+    // while (iterator1.hasNext()) {
+    // double next = iterator.next();
+    // if (next < 7) {
+    // iterator1.remove();
+    // }
+    // }
+    // System.out.println(notas);
 
     System.out.println("Apaga toda a lista: ");
     notas.clear();
@@ -77,5 +77,7 @@ public class ExemploListArray {
     LinkedList<Double> notasLinkedList = new LinkedList<Double>(Arrays.asList(7.0, 8.5, 9.3, 5d, 7d, 0d, 3.6));
     System.out.println(notasLinkedList);
 
+    Double str = notasLinkedList.listIterator(1).previous();
+    System.out.println(str);
   }
 }
